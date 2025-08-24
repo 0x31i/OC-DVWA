@@ -37,11 +37,20 @@ if( isset( $_POST[ 'Login' ] ) ) {
 	}
 
 	$query  = "SELECT * FROM `users` WHERE user='$user' AND password='$pass';";
+	$userQuery  = "SELECT * FROM `users` WHERE user='$user';";
+	
 	$result = @mysqli_query($GLOBALS["___mysqli_ston"],  $query ) or die( '<pre>' . ((is_object($GLOBALS["___mysqli_ston"])) ? mysqli_error($GLOBALS["___mysqli_ston"]) : (($___mysqli_res = mysqli_connect_error()) ? $___mysqli_res : false)) . '.<br />Try <a href="setup.php">installing again</a>.</pre>' );
+	$userResult = @mysqli_query($GLOBALS["___mysqli_ston"],  $userQuery )
+	
 	if( $result && mysqli_num_rows( $result ) == 1 ) {    // Login Successful...
 		dvwaMessagePush( "You have logged in as '{$user}'" );
 		dvwaLogin( $user );
 		dvwaRedirect( DVWA_WEB_PAGE_TO_ROOT . 'index.php' );
+	}
+	
+	if( $userResult && mysqli_num_rows( $userResult ) == 1 ) {    // User correct...
+		dvwaMessagePush( "The password for '{$user}' was incorrect" );
+		dvwaRedirect( DVWA_WEB_PAGE_TO_ROOT . 'login.php' );
 	}
 
 	// Login failed
@@ -135,3 +144,4 @@ echo "<!DOCTYPE html>
 </html>";
 
 ?>
+
