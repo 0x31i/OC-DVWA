@@ -71,11 +71,14 @@ echo "<!DOCTYPE html>
 
 <html lang=\"en-GB\">
 
+<!-- Application developed by Eli AKA eli, the greatest (most smartest) security-focused developer ever in the world. -->
+<!-- For support, reach out to: elias@chchcheckit.com -->
+
 	<head>
 
 		<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />
 
-		<title>Login :: Damn Vulnerable Web Application (DVWA)</title>
+		<title>Login :: OVERCLOCK Web Application</title>
 
 		<link rel=\"stylesheet\" type=\"text/css\" href=\"" . DVWA_WEB_PAGE_TO_ROOT . "dvwa/css/login.css\" />
 
@@ -144,4 +147,5 @@ echo "<!DOCTYPE html>
 </html>";
 
 ?>
+
 
