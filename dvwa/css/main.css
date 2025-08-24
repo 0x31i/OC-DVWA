@@ -135,7 +135,7 @@ div#header {
 	position: relative;
 	padding: 10px;
 	overflow: hidden;
-	background: #2f2f2f;
+	background: black;
 	border-bottom: 5px solid #A1CC33;
 	text-align: center;
 }
@@ -332,4 +332,5 @@ body.home.dark .message {
 
 body.home.dark div#guestbook_comments {
 	background-color: #2f2f2f;
+
 }
