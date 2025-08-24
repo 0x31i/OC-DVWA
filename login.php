@@ -40,7 +40,7 @@ if( isset( $_POST[ 'Login' ] ) ) {
 	$userQuery  = "SELECT * FROM `users` WHERE user='$user';";
 	
 	$result = @mysqli_query($GLOBALS["___mysqli_ston"],  $query ) or die( '<pre>' . ((is_object($GLOBALS["___mysqli_ston"])) ? mysqli_error($GLOBALS["___mysqli_ston"]) : (($___mysqli_res = mysqli_connect_error()) ? $___mysqli_res : false)) . '.<br />Try <a href="setup.php">installing again</a>.</pre>' );
-	$userResult = @mysqli_query($GLOBALS["___mysqli_ston"],  $userQuery )
+	$userResult = @mysqli_query($GLOBALS["___mysqli_ston"],  $userQuery );
 	
 	if( $result && mysqli_num_rows( $result ) == 1 ) {    // Login Successful...
 		dvwaMessagePush( "You have logged in as '{$user}'" );
@@ -147,5 +147,6 @@ echo "<!DOCTYPE html>
 </html>";
 
 ?>
+
 
 
