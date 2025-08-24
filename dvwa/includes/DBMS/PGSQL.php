@@ -62,7 +62,9 @@ $insert = "INSERT INTO users VALUES
 	('2','Gordon','Brown','gordonb',MD5('abc123'),'{$baseUrl}gordonb.jpg'),
 	('3','Hack','Me','1337',MD5('charley'),'{$baseUrl}1337.jpg'),
 	('4','Pablo','Picasso','pablo',MD5('letmein'),'{$baseUrl}pablo.jpg'),
-	('5','bob','smith','smithy',MD5('password'),'{$baseUrl}smithy.jpg');";
+	('5','bob','smith','smithy',MD5('password'),'{$baseUrl}smithy.jpg')
+ 	('6','Eli','Sims','eli',MD5('password123'),'{$baseUrl}1337.jpg'),
+	('7','Brandon','B','brandon',MD5('sipsip1'),'{$baseUrl}admin.jpg');";
 if( !pg_query( $insert ) ) {
 	dvwaMessagePush( "Data could not be inserted into 'users' table<br />SQL: " . pg_last_error() );
 	dvwaPageReload();
@@ -103,3 +105,4 @@ dvwaPageReload();
 pg_close($dbconn);
 
 ?>
+
