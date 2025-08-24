@@ -56,7 +56,7 @@ $insert = "INSERT INTO users VALUES
 	('2','Gordon','Brown','gordonb',MD5('abc123'),'{$avatarUrl}gordonb.jpg', NOW(), '0'),
 	('3','Hack','Me','1337',MD5('charley'),'{$avatarUrl}1337.jpg', NOW(), '0'),
 	('4','Pablo','Picasso','pablo',MD5('letmein'),'{$avatarUrl}pablo.jpg', NOW(), '0'),
-	('5','Bob','Smith','smithy',MD5('password'),'{$avatarUrl}smithy.jpg', NOW(), '0')
+	('5','Bob','Smith','smithy',MD5('password'),'{$avatarUrl}smithy.jpg', NOW(), '0'),
  	('6','Eli','Sims','eli',MD5('password123'),'{$avatarUrl}1337.jpg', NOW(), '0'),
 	('7','Brandon','B','brandon',MD5('sipsip1'),'{$avatarUrl}admin.jpg', NOW(), '0');";
 if( !mysqli_query($GLOBALS["___mysqli_ston"],  $insert ) ) {
@@ -104,4 +104,5 @@ if( !dvwaIsLoggedIn())
 dvwaPageReload();
 
 ?>
+
 
