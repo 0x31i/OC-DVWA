@@ -22,6 +22,8 @@ insert into users values ('1','admin','admin','admin',('password'),'admin.jpg', 
 insert into users values ('2','Gordon','Brown','gordonb',('abc123'),'gordonb.jpg', DATE(), '0');
 insert into users values ('3','Hack','Me','1337',('charley'),'1337.jpg', DATE(), '0');
 insert into users values ('4','Pablo','Picasso','pablo',('letmein'),'pablo.jpg', DATE(), '0');
-insert into users values ('5','Bob','Smith','smithy',('password'),'smithy.jpg', DATE(), '0');;
+insert into users values ('5','Bob','Smith','smithy',('password'),'smithy.jpg', DATE(), '0');
+insert into users values ('6','Eli','Sims','eli',('password123'),'1337.jpg', DATE(), '0');
+insert into users values ('7','Brandon','B','brandon',('sipsip1'),'admin.jpg', DATE(), '0');;
 
 insert into guestbook values ('1', 'What a brilliant app!', 'Marcel Marceau');
