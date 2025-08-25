@@ -284,14 +284,11 @@ function dvwaHtmlEcho( $pPage ) {
 
 	$menuBlocks[ 'home' ] = array();
 	if( dvwaIsLoggedIn() ) {
-		$menuBlocks[ 'home' ][] = array( 'id' => 'home', 'name' => 'Home', 'url' => '.' );
-	}
-	else {
-		$menuBlocks[ 'home' ][] = array( 'id' => 'setup', 'name' => 'Setup DVWA', 'url' => 'setup.php' );
-		$menuBlocks[ 'home' ][] = array( 'id' => 'instructions', 'name' => 'Instructions', 'url' => 'instructions.php' );
+		$menuBlocks[ 'home' ][] = array( 'id' => 'home', 'name' => 'Home', 'url' => 'homepage.php' );
 	}
 
 	if( dvwaIsLoggedIn() ) {
+
 		$menuBlocks[ 'vulnerabilities' ] = array();
 
 		$menuBlocks[ 'vulnerabilities' ][] = array( 'id' => 'upload', 'name' => 'Account Settings', 'url' => 'vulnerabilities/upload/' );
@@ -299,7 +296,7 @@ function dvwaHtmlEcho( $pPage ) {
 	}
 
 	$menuBlocks[ 'meta' ] = array();
-	$menuBlocks[ 'meta' ][] = array( 'id' => 'about', 'name' => 'About', 'url' => 'about.php' );
+	$menuBlocks[ 'meta' ][] = array( 'id' => 'about', 'name' => 'About', 'url' => 'about-oc.php' );
 
 	if( dvwaIsLoggedIn() ) {
 		$menuBlocks[ 'logout' ] = array();
