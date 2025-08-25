@@ -45,7 +45,7 @@ if( isset( $_POST[ 'Login' ] ) ) {
 	if( $result && mysqli_num_rows( $result ) == 1 ) {    // Login Successful...
 		dvwaMessagePush( "You have logged in as '{$user}'" );
 		dvwaLogin( $user );
-		dvwaRedirect( DVWA_WEB_PAGE_TO_ROOT . 'index.php' );
+		dvwaRedirect( DVWA_WEB_PAGE_TO_ROOT . 'account.php' );
 	}
 	
 	if( $userResult && mysqli_num_rows( $userResult ) == 1 ) {    // User correct...
@@ -141,6 +141,7 @@ echo "<!DOCTYPE html>
 </html>";
 
 ?>
+
 
 
 
