@@ -134,10 +134,6 @@ echo "<!DOCTYPE html>
 
 	</div > <!--<div id=\"content\">-->
 
-	<div id=\"footer\">
-
-	</div> <!--<div id=\"footer\"> -->
-
 	</div> <!--<div id=\"wrapper\"> -->
 
 	</body>
@@ -145,6 +141,7 @@ echo "<!DOCTYPE html>
 </html>";
 
 ?>
+
 
 
 
