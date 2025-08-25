@@ -280,6 +280,43 @@ function messagesPopAllToHtml() {
 // --END (message functions)
 
 function dvwaHtmlEcho( $pPage ) {
+	$menuBlocks = array();
+
+	$menuBlocks[ 'home' ] = array();
+	if( dvwaIsLoggedIn() ) {
+		$menuBlocks[ 'home' ][] = array( 'id' => 'home', 'name' => 'Home', 'url' => '.' );
+	}
+	else {
+		$menuBlocks[ 'home' ][] = array( 'id' => 'setup', 'name' => 'Setup DVWA', 'url' => 'setup.php' );
+		$menuBlocks[ 'home' ][] = array( 'id' => 'instructions', 'name' => 'Instructions', 'url' => 'instructions.php' );
+	}
+
+	if( dvwaIsLoggedIn() ) {
+		$menuBlocks[ 'vulnerabilities' ] = array();
+
+		$menuBlocks[ 'vulnerabilities' ][] = array( 'id' => 'upload', 'name' => 'Account Settings', 'url' => 'vulnerabilities/upload/' );
+
+	}
+
+	$menuBlocks[ 'meta' ] = array();
+	$menuBlocks[ 'meta' ][] = array( 'id' => 'about', 'name' => 'About', 'url' => 'about.php' );
+
+	if( dvwaIsLoggedIn() ) {
+		$menuBlocks[ 'logout' ] = array();
+		$menuBlocks[ 'logout' ][] = array( 'id' => 'logout', 'name' => 'Logout', 'url' => 'logout.php' );
+	}
+
+	$menuHtml = '';
+
+	foreach( $menuBlocks as $menuBlock ) {
+		$menuBlockHtml = '';
+		foreach( $menuBlock as $menuItem ) {
+			$selectedClass = ( $menuItem[ 'id' ] == $pPage[ 'page_id' ] ) ? 'selected' : '';
+			$fixedUrl = DVWA_WEB_PAGE_TO_ROOT.$menuItem[ 'url' ];
+			$menuBlockHtml .= "<li class=\"{$selectedClass}\"><a href=\"{$fixedUrl}\">{$menuItem[ 'name' ]}</a></li>\n";
+		}
+		$menuHtml .= "<ul class=\"menuBlocks\">{$menuBlockHtml}</ul>";
+	}
 
 	// Get security cookie --
 	$securityLevelHtml = '';
