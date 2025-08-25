@@ -136,8 +136,6 @@ echo "<!DOCTYPE html>
 
 	<div id=\"footer\">
 
-	<p>"The OVERCLOCK Web Application"</p>
-
 	</div> <!--<div id=\"footer\"> -->
 
 	</div> <!--<div id=\"wrapper\"> -->
@@ -147,6 +145,7 @@ echo "<!DOCTYPE html>
 </html>";
 
 ?>
+
 
 
 
