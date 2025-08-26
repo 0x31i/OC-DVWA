@@ -295,8 +295,9 @@ function dvwaHtmlEcho( $pPage ) {
 
 	}
 
-	$menuBlocks[ 'meta' ] = array();
-	$menuBlocks[ 'meta' ][] = array( 'id' => 'about', 'name' => 'About', 'url' => 'about-oc.php' );
+//	Bypassing the about page for now- Still in development.
+//	$menuBlocks[ 'meta' ] = array();
+//	$menuBlocks[ 'meta' ][] = array( 'id' => 'about', 'name' => 'About', 'url' => 'about-oc.php' );
 
 	if( dvwaIsLoggedIn() ) {
 		$menuBlocks[ 'logout' ] = array();
