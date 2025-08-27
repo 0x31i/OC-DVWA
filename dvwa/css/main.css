@@ -1,7 +1,22 @@
+/* 1. Define the custom font (using local file example) */
+@font-face {
+    font-family: 'ThunderNova';
+    src: url('fonts/ThunderNova.woff2') format('woff2'),
+         url('fonts/ThunderNova.woff') format('woff'),
+         url('fonts/ThunderNova.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 2. Apply the custom font globally */
+* {
+    font-family: ThunderNova, Arial, Helvetica, sans-serif !important;
+}
+
 body {
 	margin: 0;
 	color: #2f2f2f;
-	font: 12px/15px Arial, Helvetica, sans-serif;
+	font: 12px/15px ThunderNova, Arial, Helvetica, sans-serif;
 	min-width: 981px;
 	height: 100%;
 	position: relative;
@@ -30,7 +45,7 @@ a: hover {
 }
 
 input, textarea, select {
-	font: 100% arial,sans-serif;
+	font: 100% ThunderNova, arial,sans-serif;
 	vertical-align: middle;
 }
 
@@ -334,3 +349,4 @@ body.home.dark div#guestbook_comments {
 	background-color: #2f2f2f;
 
 }
+
