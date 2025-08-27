@@ -65,7 +65,7 @@ $page[ 'body' ] .= "
 		{$html}
 	</div>
 
-	<h2>Danger Zone</h2>
+	<h3>Danger Zone:</h3>
 	<ul>
 		<li>Account Status: Active</li>
  		<li>Public Profile: Visible</li>
@@ -74,13 +74,14 @@ $page[ 'body' ] .= "
 		<li>Email Notifications: Replies enabled, PM alerts enabled, newsletter disabled</li>
 	</ul>
  
-  	<h2>Your application is currently on the free plan</h2> 
+  	<h3>Your application is currently on the free plan:</h3> 
 	<p>Paid plans offer higher usage limits, additional branches, and much more.</p>
 </div>";
 
 dvwaHtmlEcho( $page );
 
 ?>
+
 
 
 
