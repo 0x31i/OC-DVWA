@@ -44,8 +44,8 @@ if( ( !extension_loaded( 'gd' ) || !function_exists( 'gd_info' ) ) ) {
 $page[ 'body' ] .= "
 <div class=\"body_padded\">
 	<h1>Account Settings</h1>
- 	<h2>Your application is currently on the free plan</h2> 
-	<p>Paid plans offer higher usage limits, additional branches, and much more.</p>
+ 	<h3>Profile Picture:</h3> 
+	<p>Please upload a profile picture below.</p>
 
 	{$WarningHtml}
 
@@ -73,11 +73,15 @@ $page[ 'body' ] .= "
 		<li>Show Online Status: Disabled</li>
 		<li>Email Notifications: Replies enabled, PM alerts enabled, newsletter disabled</li>
 	</ul>
+ 
+  	<h2>Your application is currently on the free plan</h2> 
+	<p>Paid plans offer higher usage limits, additional branches, and much more.</p>
 </div>";
 
 dvwaHtmlEcho( $page );
 
 ?>
+
 
 
 
