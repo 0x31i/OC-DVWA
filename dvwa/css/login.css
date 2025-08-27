@@ -10,7 +10,7 @@
 
 /* 2. Apply the custom font globally */
 * {
-    font-family: 'ThunderNova', Arial, Helvetica, sans-serif !important;
+    font-family: ThunderNova, Arial, Helvetica, sans-serif !important;
 }
 
 body {
@@ -71,6 +71,7 @@ fieldset {
 p {
 	font-size: 10px;
 }
+
 
 
 
