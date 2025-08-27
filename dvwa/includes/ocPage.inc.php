@@ -335,9 +335,9 @@ function dvwaHtmlEcho( $pPage ) {
 	// -- END (security cookie)
 
 	$userInfoHtml = '<em>Username:</em> ' . ( dvwaCurrentUser() );
-	$securityLevelHtml = "<em>Security Level:</em> {$securityLevelHtml}";
+	// $securityLevelHtml = "<em>Security Level:</em> {$securityLevelHtml}";
 	$localeHtml = '<em>Locale:</em> ' . ( dvwaLocaleGet() );
-	$sqliDbHtml = '<em>SQLi DB:</em> ' . ( dvwaSQLiDBGet() );
+	// $sqliDbHtml = '<em>SQLi DB:</em> ' . ( dvwaSQLiDBGet() );
 
 
 	$messagesHtml = messagesPopAllToHtml();
@@ -347,7 +347,7 @@ function dvwaHtmlEcho( $pPage ) {
 
 	$systemInfoHtml = "";
 	if( dvwaIsLoggedIn() )
-		$systemInfoHtml = "<div align=\"left\">{$userInfoHtml}<br />{$securityLevelHtml}<br />{$localeHtml}<br />{$sqliDbHtml}</div>";
+		$systemInfoHtml = "<div align=\"left\">{$userInfoHtml}<br />{$localeHtml}<br /></div>";
 	if( $pPage[ 'source_button' ] ) {
 		$systemInfoHtml = dvwaButtonSourceHtmlGet( $pPage[ 'source_button' ] ) . " $systemInfoHtml";
 	}
