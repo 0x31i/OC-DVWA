@@ -1,21 +1,14 @@
-/* 1. Define the custom font (using local file example) */
-@font-face {
-    font-family: 'ThunderNova';
-    src: url('fonts/ThunderNova.woff2') format('woff2'),
-         url('fonts/ThunderNova.woff') format('woff'),
-         url('fonts/ThunderNova.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC&display=swap');
 
-/* 2. Apply the custom font globally */
+/* Apply Alumni Sans SC globally */
 * {
-    font-family: ThunderNova, Arial, Helvetica, sans-serif !important;
+    font-family: 'Alumni Sans SC', Arial, Helvetica, sans-serif !important;
 }
 
 body {
 	background: #121114;
-	font: 12px/15px ThunderNova, Arial, Helvetica, sans-serif;
+	font: 12px/15px 'Alumni Sans SC', Arial, Helvetica, sans-serif;
 	line-height: 20px;
 	color: #6b6b6b;
 }
@@ -71,6 +64,7 @@ fieldset {
 p {
 	font-size: 10px;
 }
+
 
 
 
