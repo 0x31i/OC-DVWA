@@ -1,14 +1,14 @@
 /* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@100;300;400;500;700;900&display=swap');
 
-/* Apply Alumni Sans SC globally */
+/* Apply Oxanium globally */
 * {
-    font-family: 'Alumni Sans SC', Arial, Helvetica, sans-serif !important;
+  font-family: 'Oxanium', Arial, Helvetica, sans-serif !important;
 }
 
 body {
 	background: #121114;
-	font: 12px/15px 'Alumni Sans SC', Arial, Helvetica, sans-serif;
+	font: 12px/15px 'Oxanium', Arial, Helvetica, sans-serif;
 	line-height: 20px;
 	color: #6b6b6b;
 }
@@ -64,6 +64,7 @@ fieldset {
 p {
 	font-size: 10px;
 }
+
 
 
 
