@@ -1,15 +1,15 @@
 /* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
-/* Use DM Sans globally */
+/* Apply Nunito globally */
 * {
-  font-family: 'DM Sans', Arial, Helvetica, sans-serif !important;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif !important;
 }
 
 body {
     margin: 0;
     color: #2f2f2f;
-    font: 12px/15px 'DM Sans', Arial, Helvetica, sans-serif;
+    font: 12px/15px 'Nunito', Arial, Helvetica, sans-serif;
     min-width: 981px;
     height: 100%;
     position: relative;
@@ -38,7 +38,7 @@ a: hover {
 }
 
 input, textarea, select {
-	font: 100% 'DM Sans', arial,sans-serif;
+	font: 100% 'Nunito', arial,sans-serif;
 	vertical-align: middle;
 }
 
@@ -342,6 +342,7 @@ body.home.dark div#guestbook_comments {
 	background-color: #2f2f2f;
 
 }
+
 
 
 
