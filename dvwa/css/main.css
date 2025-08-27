@@ -1,18 +1,18 @@
 /* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC&display=swap');
 
-/* Apply Electrolize font globally */
+/* Apply Alumni Sans SC globally */
 * {
-    font-family: 'Electrolize', Arial, Helvetica, sans-serif !important;
+    font-family: 'Alumni Sans SC', Arial, Helvetica, sans-serif !important;
 }
 
 body {
-	margin: 0;
-	color: #2f2f2f;
-	font: 12px/15px 'ThunderNova', Arial, Helvetica, sans-serif;
-	min-width: 981px;
-	height: 100%;
-	position: relative;
+    margin: 0;
+    color: #2f2f2f;
+    font: 12px/15px 'Alumni Sans SC', Arial, Helvetica, sans-serif;
+    min-width: 981px;
+    height: 100%;
+    position: relative;
 }
 
 body.home {
@@ -38,7 +38,7 @@ a: hover {
 }
 
 input, textarea, select {
-	font: 100% ThunderNova, arial,sans-serif;
+	font: 100% 'Alumni Sans SC', arial,sans-serif;
 	vertical-align: middle;
 }
 
@@ -90,7 +90,7 @@ ul + ul, ul + ul.menuBlocks, ul + h1, ul + h2, ul + p {
 }
 
 .fixed {
-	font-family: Fixed, Courier, monospace;
+	font-family: Fixed, 'Alumni Sans SC', Courier, monospace;
 	font-size: 13px;
 }
 
@@ -342,6 +342,7 @@ body.home.dark div#guestbook_comments {
 	background-color: #2f2f2f;
 
 }
+
 
 
 
