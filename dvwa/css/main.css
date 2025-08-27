@@ -1,22 +1,22 @@
-/* 1. Define the custom font (using local file example) */
+/* Define the custom font */
 @font-face {
     font-family: 'ThunderNova';
-    src: url('fonts/ThunderNova.woff2') format('woff2'),
-         url('fonts/ThunderNova.woff') format('woff'),
-         url('fonts/ThunderNova.ttf') format('truetype');
+    src: url('/fonts/ThunderNova.woff2') format('woff2'),
+         url('/fonts/ThunderNova.woff') format('woff'),
+         url('/fonts/ThunderNova.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-/* 2. Apply the custom font globally */
+/* Force everything to use it */
 * {
-    font-family: ThunderNova, Arial, Helvetica, sans-serif !important;
+    font-family: 'ThunderNova', Arial, Helvetica, sans-serif !important;
 }
 
 body {
 	margin: 0;
 	color: #2f2f2f;
-	font: 12px/15px ThunderNova, Arial, Helvetica, sans-serif;
+	font: 12px/15px 'ThunderNova', Arial, Helvetica, sans-serif;
 	min-width: 981px;
 	height: 100%;
 	position: relative;
@@ -349,4 +349,5 @@ body.home.dark div#guestbook_comments {
 	background-color: #2f2f2f;
 
 }
+
 
