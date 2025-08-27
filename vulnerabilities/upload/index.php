@@ -64,6 +64,10 @@ $page[ 'body' ] .= "
 	</div>
 
 	<h2>More Information</h2>
+ 	$userInfoHtml = '<em>Username:</em> ' . ( dvwaCurrentUser() );
+	$securityLevelHtml = "<em>Security Level:</em> {$securityLevelHtml}";
+	$localeHtml = '<em>Locale:</em> ' . ( dvwaLocaleGet() );
+	$sqliDbHtml = '<em>SQLi DB:</em> ' . ( dvwaSQLiDBGet() );
 	<ul>
 		<li>" . dvwaExternalLinkUrlGet( 'https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload' ) . "</li>
 		<li>" . dvwaExternalLinkUrlGet( 'https://www.acunetix.com/websitesecurity/upload-forms-threat/' ) . "</li>
@@ -73,4 +77,5 @@ $page[ 'body' ] .= "
 dvwaHtmlEcho( $page );
 
 ?>
+
 
