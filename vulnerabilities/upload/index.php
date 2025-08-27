@@ -6,7 +6,7 @@ require_once DVWA_WEB_PAGE_TO_ROOT . 'dvwa/includes/ocPage.inc.php';
 dvwaPageStartup( array( 'authenticated' ) );
 
 $page = dvwaPageNewGrab();
-$page[ 'title' ]   = 'Vulnerability: File Upload' . $page[ 'title_separator' ].$page[ 'title' ];
+$page[ 'title' ]   = 'Account Settings' . $page[ 'title_separator' ].$page[ 'title' ];
 $page[ 'page_id' ] = 'upload';
 $page[ 'help_button' ]   = 'upload';
 $page[ 'source_button' ] = 'upload';
@@ -64,10 +64,6 @@ $page[ 'body' ] .= "
 	</div>
 
 	<h2>More Information</h2>
- 	$userInfoHtml = '<em>Username:</em> ' . ( dvwaCurrentUser() );
-	$securityLevelHtml = "<em>Security Level:</em> {$securityLevelHtml}";
-	$localeHtml = '<em>Locale:</em> ' . ( dvwaLocaleGet() );
-	$sqliDbHtml = '<em>SQLi DB:</em> ' . ( dvwaSQLiDBGet() );
 	<ul>
 		<li>" . dvwaExternalLinkUrlGet( 'https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload' ) . "</li>
 		<li>" . dvwaExternalLinkUrlGet( 'https://www.acunetix.com/websitesecurity/upload-forms-threat/' ) . "</li>
@@ -77,5 +73,6 @@ $page[ 'body' ] .= "
 dvwaHtmlEcho( $page );
 
 ?>
+
 
 
