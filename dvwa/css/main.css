@@ -144,7 +144,7 @@ div#header {
 	padding: 10px;
 	overflow: hidden;
 	background: black;
-	border-bottom: 5px solid #A1CC33;
+	border-bottom: 5px solid #03fdab;
 	text-align: center;
 }
 
@@ -186,19 +186,19 @@ div#main_menu li {
 }
 
 div#main_menu li a {
-	color: #000000;
+	color: white;
 	text-decoration: none;
 	display: block;
 }
 
 div#main_menu li:hover {
-    background-color: #ccc;
+    background-color: white;
 }
 
 
 div#main_menu li.selected {
-	border-color: #758DAE #758DAE #758DAE #758DAE;
-	background-color: #99cc33;
+	border-color: #000000 #000000 #000000 #000000;
+	background-color: #03fdab;
 }
 
 div#main_menu li.selected a {
@@ -219,10 +219,10 @@ div#main_menu_padded {
 
 div#footer {
 	color: #999999;
-	background: #2f2f2f;
+	background: #1d1d1d;
 	padding: 10px;
 	text-align: center;
-	border-top: 5px solid #A1CC33;
+	border-top: 5px solid #03fdab;
 }
 
 .popup_button {
@@ -319,7 +319,7 @@ span.failure {
 
 /* === Dark theme === */
 body.home.dark {
-	background: #2f2f2f;
+	background: #0e0e0e;
 	color: #f8fafa;
 }
 
@@ -342,6 +342,7 @@ body.home.dark div#guestbook_comments {
 	background-color: #2f2f2f;
 
 }
+
 
 
 
