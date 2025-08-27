@@ -37,10 +37,6 @@ $page[ 'body' ] .= "
 	<hr />
 	<br />
 
-	<h2>More Training Resources</h2>
-	<p>DVWA aims to cover the most commonly seen vulnerabilities found in today's web applications. However there are plenty of other issues with web applications. Should you wish to explore any additional attack vectors, or want more difficult challenges, you may wish to look into the following other projects:</p>
-	<hr />
-	<br />
 </div>";
 
 dvwaHtmlEcho( $page );
