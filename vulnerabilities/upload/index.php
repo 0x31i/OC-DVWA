@@ -65,7 +65,7 @@ $page[ 'body' ] .= "
 		{$html}
 	</div>
 
-	<h3>Danger Zone:</h3>
+	<h3>General Settings:</h3>
 	<ul>
 		<li>Account Status: Active</li>
  		<li>Public Profile: Visible</li>
@@ -81,6 +81,7 @@ $page[ 'body' ] .= "
 dvwaHtmlEcho( $page );
 
 ?>
+
 
 
 
