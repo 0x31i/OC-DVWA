@@ -8,8 +8,8 @@ dvwaPageStartup( array( 'authenticated' ) );
 $page = dvwaPageNewGrab();
 $page[ 'title' ]   = 'Account Settings' . $page[ 'title_separator' ].$page[ 'title' ];
 $page[ 'page_id' ] = 'upload';
-$page[ 'help_button' ]   = 'upload';
-$page[ 'source_button' ] = 'upload';
+// $page[ 'help_button' ]   = 'upload';
+// $page[ 'source_button' ] = 'upload';
 
 dvwaDatabaseConnect();
 
@@ -43,7 +43,7 @@ if( ( !extension_loaded( 'gd' ) || !function_exists( 'gd_info' ) ) ) {
 
 $page[ 'body' ] .= "
 <div class=\"body_padded\">
-	<h1>Vulnerability: File Upload</h1>
+	<h1>Account Settings</h1>
 
 	{$WarningHtml}
 
@@ -73,6 +73,7 @@ $page[ 'body' ] .= "
 dvwaHtmlEcho( $page );
 
 ?>
+
 
 
 
