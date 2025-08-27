@@ -44,6 +44,8 @@ if( ( !extension_loaded( 'gd' ) || !function_exists( 'gd_info' ) ) ) {
 $page[ 'body' ] .= "
 <div class=\"body_padded\">
 	<h1>Account Settings</h1>
+ 	<h2>Your application is currently on the free plan</h2> 
+	<p>Paid plans offer higher usage limits, additional branches, and much more.</p>
 
 	{$WarningHtml}
 
@@ -63,16 +65,20 @@ $page[ 'body' ] .= "
 		{$html}
 	</div>
 
-	<h2>More Information</h2>
+	<h2>Danger Zone</h2>
 	<ul>
-		<li>" . dvwaExternalLinkUrlGet( 'https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload' ) . "</li>
-		<li>" . dvwaExternalLinkUrlGet( 'https://www.acunetix.com/websitesecurity/upload-forms-threat/' ) . "</li>
+		<li>Account Status: Active</li>
+ 		<li>Public Profile: Visible</li>
+		<li>Show Hardware Specs: Enabled</li>
+		<li>Show Online Status: Disabled</li>
+		<li>Email Notifications: Replies enabled, PM alerts enabled, newsletter disabled</li>
 	</ul>
 </div>";
 
 dvwaHtmlEcho( $page );
 
 ?>
+
 
 
 
