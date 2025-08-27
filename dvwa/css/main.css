@@ -1,16 +1,9 @@
-/* Define the custom font */
-@font-face {
-    font-family: 'ThunderNova';
-    src: url('/fonts/ThunderNova.woff2') format('woff2'),
-         url('/fonts/ThunderNova.woff') format('woff'),
-         url('/fonts/ThunderNova.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 
-/* Force everything to use it */
+/* Apply Electrolize font globally */
 * {
-    font-family: 'ThunderNova', Arial, Helvetica, sans-serif !important;
+    font-family: 'Electrolize', Arial, Helvetica, sans-serif !important;
 }
 
 body {
@@ -349,5 +342,6 @@ body.home.dark div#guestbook_comments {
 	background-color: #2f2f2f;
 
 }
+
 
 
