@@ -15,10 +15,10 @@ $page[ 'body' ] .= "
 	<p>The hub for PC enthusiasts, builders, and performance seekers.</p>
 	<p>At Overclock, we bring together a community of hardware lovers who thrive on pushing their systems to the limit. Whether you’re building your first rig, swapping out components for the ultimate upgrade, or fine-tuning every MHz for peak performance, this is the place to share your journey.</p>
 	<ul>
-		<li>" Show off your setup with photos, benchmarks, and detailed specs. "</li>
-		<li>" Discuss upgrades and get feedback from experienced builders. "</li>
-  		<li>" Discover new hardware trends and learn optimization tips from the community. "</li>
-  		<li>" Collaborate and connect with others who share the passion for performance. "</li>
+		<li>Show off your setup with photos, benchmarks, and detailed specs.</li>
+		<li>Discuss upgrades and get feedback from experienced builders.</li>
+  		<li>Discover new hardware trends and learn optimization tips from the community.</li>
+  		<li>Collaborate and connect with others who share the passion for performance.</li>
 	</ul>
  	<hr />
 	<br />
