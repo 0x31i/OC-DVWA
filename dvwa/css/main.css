@@ -179,10 +179,10 @@ div#main_menu {
 div#main_menu li {
 	border-width: 1px;
 	border-style: solid;
-	border-color: #D2D4D4 #6B778C #6B778C #D2D4D4;
+	border-color: #000000 #000000 #000000 #000000;
 	padding: 3px 5px 3px 5px;
 	margin-bottom: 3px;
-	background-color: #bebebe;
+	background-color: black;
 }
 
 div#main_menu li a {
@@ -202,15 +202,15 @@ div#main_menu li.selected {
 }
 
 div#main_menu li.selected a {
-	color: #F9F7ED;
+	color: white;
 }
 
 div#main_menu li: hover {
-	border-color: #D2D4D4;
+	border-color: #000000;
 }
 
 div#main_menu li: hover a {
-	color: #F9F7ED;
+	color: black;
 }
 
 div#main_menu_padded {
@@ -342,6 +342,7 @@ body.home.dark div#guestbook_comments {
 	background-color: #2f2f2f;
 
 }
+
 
 
 
