@@ -65,6 +65,22 @@ $page[ 'body' ] .= "
 		{$html}
 	</div>
 
+	<h3>General Settings:</h3>
+	<ul>
+		<li>Account Status: Active</li>
+ 		<li>Public Profile: Visible</li>
+		<li>Show Hardware Specs: Enabled</li>
+		<li>Show Online Status: Disabled</li>
+		<li>Email Notifications: Replies enabled, PM alerts enabled, newsletter disabled</li>
+	</ul>
+ 
+  	<h3>Your application is currently on the free plan:</h3> 
+	<p>Paid plans offer higher usage limits, additional branches, and much more.</p>
+</div>";
+
+dvwaHtmlEcho( $page );
+
+?>
 
 // <?php
 //
@@ -99,23 +115,6 @@ $page[ 'body' ] .= "
 // }
 // ?>
 
-
-	<h3>General Settings:</h3>
-	<ul>
-		<li>Account Status: Active</li>
- 		<li>Public Profile: Visible</li>
-		<li>Show Hardware Specs: Enabled</li>
-		<li>Show Online Status: Disabled</li>
-		<li>Email Notifications: Replies enabled, PM alerts enabled, newsletter disabled</li>
-	</ul>
- 
-  	<h3>Your application is currently on the free plan:</h3> 
-	<p>Paid plans offer higher usage limits, additional branches, and much more.</p>
-</div>";
-
-dvwaHtmlEcho( $page );
-
-?>
 
 
 
