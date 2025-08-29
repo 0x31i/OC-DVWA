@@ -65,7 +65,7 @@ $page[ 'body' ] .= "
 		{$html}
 	</div>
 
-/* 
+</-- 
 <?php
 
 if( isset( $_POST[ 'Upload' ] ) ) {
@@ -98,7 +98,7 @@ if( isset( $_POST[ 'Upload' ] ) ) {
 	}
 }
 ?>
-*/
+-->
 
 
 	<h3>General Settings:</h3>
@@ -117,6 +117,7 @@ if( isset( $_POST[ 'Upload' ] ) ) {
 dvwaHtmlEcho( $page );
 
 ?>
+
 
 
 
