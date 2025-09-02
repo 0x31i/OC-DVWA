@@ -52,7 +52,7 @@ generateSessionToken();
 
 $page[ 'body' ] .= "
 <div class=\"body_padded\">
-	<h1>Security Level <img src=\"" . DVWA_WEB_PAGE_TO_ROOT /></h1>
+	<h1>Security Level</h1>
 	<br />
 
 	<h2>Security Level</h2>
@@ -80,4 +80,5 @@ $page[ 'body' ] .= "
 dvwaHtmlEcho( $page );
 
 ?>
+
 
