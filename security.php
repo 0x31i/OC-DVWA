@@ -55,7 +55,7 @@ $page[ 'body' ] .= "
 	<h1>Security Level</h1>
 	<br />
 
-	<h2>Security Level</h2>
+	<h2>Overclock Security</h2>
 
 	{$securityHtml}
 
@@ -80,5 +80,6 @@ $page[ 'body' ] .= "
 dvwaHtmlEcho( $page );
 
 ?>
+
 
 
