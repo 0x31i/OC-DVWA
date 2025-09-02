@@ -294,6 +294,13 @@ function dvwaHtmlEcho( $pPage ) {
 		$menuBlocks[ 'vulnerabilities' ][] = array( 'id' => 'upload', 'name' => 'Account Settings', 'url' => 'vulnerabilities/upload/' );
 
 	}
+		if( dvwaIsLoggedIn() ) {
+
+		$menuBlocks[ 'index' ] = array();
+
+		$menuBlocks[ 'index' ][] = array( 'id' => 'index', 'name' => 'OC Application', 'url' => 'index.php' );
+
+	}
 
 //	Bypassing the about page for now- Still in development.
 //	$menuBlocks[ 'meta' ] = array();
