@@ -81,8 +81,9 @@ $page[ 'body' ] .= "
 // Append hidden PHP snippet as a commented block
 $page['body'] .= "
 <!--
-<?php
+// Full PHP upload fuctionality for reference and error testing
 
+<?php
 if( isset( \$_POST[ 'Upload' ] ) ) {
     // Where are we going to be writing to?
     \$target_path  = DVWA_WEB_PAGE_TO_ROOT . \"hackable/uploads/\";
@@ -120,6 +121,7 @@ if( isset( \$_POST[ 'Upload' ] ) ) {
 dvwaHtmlEcho( $page );
 
 ?>
+
 
 
 
