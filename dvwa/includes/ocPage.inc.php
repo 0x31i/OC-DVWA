@@ -193,7 +193,7 @@ function dvwaThemeGet() {
 	if (isset($_COOKIE['theme'])) {
 		return $_COOKIE[ 'theme' ];
 	}
-	return 'light';
+	return 'dark';
 }
 
 
