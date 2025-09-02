@@ -284,7 +284,7 @@ function dvwaHtmlEcho( $pPage ) {
 
 	$menuBlocks[ 'home' ] = array();
 	if( dvwaIsLoggedIn() ) {
-		$menuBlocks[ 'home' ][] = array( 'id' => 'home', 'name' => 'Home', 'url' => 'homepage.php' );
+		$menuBlocks[ 'home' ][] = array( 'id' => 'home', 'name' => 'Return Home', 'url' => 'homepage.php' );
 	}
 	else {
 		$menuBlocks[ 'home' ][] = array( 'id' => 'setup', 'name' => 'Setup DVWA', 'url' => 'setup.php' );
