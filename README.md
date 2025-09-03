@@ -16,25 +16,6 @@ We do not take responsibility for the way in which any one uses this application
 
 - - -
 
-## License
-
-This file is part of D*mn Vulnerable Web Application (DVWA).
-
-D*mn Vulnerable Web Application (DVWA) is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-D*mn Vulnerable Web Application (DVWA) is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with D*mn Vulnerable Web Application (DVWA).  If not, see <https://www.gnu.org/licenses/>.
-
-- - -
-
 ## Internationalisation
 
 This file is available in multiple languages:
@@ -69,8 +50,6 @@ Or [download a ZIP of the files](https://github.com/0x31i/OCWA/archive/master.zi
 ## Installation
 
 ### Automated Installation 🛠️
-
-**Note, this is not an official DVWA script, it was written by [IamCarron](https://github.com/iamCarron/). A lot of work went into creating the script and, when it was created, it did not do anything malicious, however it is recommended you review the script before blindly running it on your system, just in case. Please report any bugs to [IamCarron](https://github.com/iamCarron/), not here.**
 
 An automated configuration script for DVWA on Debian-based machines, including Kali, Ubuntu, Kubuntu, Linux Mint, Zorin OS...
 
