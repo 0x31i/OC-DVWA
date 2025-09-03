@@ -298,7 +298,7 @@ function dvwaHtmlEcho( $pPage ) {
 
 		$menuBlocks[ 'index' ] = array();
 
-		$menuBlocks[ 'index' ][] = array( 'id' => 'index', 'name' => 'OC Application', 'url' => 'index.php' );
+		$menuBlocks[ 'index' ][] = array( 'id' => 'index', 'name' => 'Launch OCWA', 'url' => 'index.php' );
 
 	}
 
