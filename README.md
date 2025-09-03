@@ -1,37 +1,37 @@
-# DAMN VULNERABLE WEB APPLICATION
+# OVERCLOCK WEB APPLICATION
 
-Damn Vulnerable Web Application (DVWA) is a PHP/MariaDB web application that is damn vulnerable. Its main goal is to be an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and to aid both students & teachers to learn about web application security in a controlled class room environment.
+Overclock Web Application (OCWA) is a PHP/MariaDB web application that is intentially vulnerable. Its main goal is to be an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and to aid both students & teachers to learn about web application security in a controlled class room environment.
 
-The aim of DVWA is to **practice some of the most common web vulnerabilities**, with **various levels of difficulty**, with a simple straightforward interface.
+The aim of OCWA is to **practice some of the most common web vulnerabilities**, with **various levels of difficulty**, with a simple straightforward interface.
 Please note, there are **both documented and undocumented vulnerabilities** with this software. This is intentional. You are encouraged to try and discover as many issues as possible.
 - - -
 
 ## WARNING!
 
-Damn Vulnerable Web Application is damn vulnerable! **Do not upload it to your hosting provider's public html folder or any Internet facing servers**, as they will be compromised. It is recommended using a virtual machine (such as [VirtualBox](https://www.virtualbox.org/) or [VMware](https://www.vmware.com/)), which is set to NAT networking mode. Inside a guest machine, you can download and install [XAMPP](https://www.apachefriends.org/) for the web server and database.
+Overclock Web Application is vulnerable! **Do not upload it to your hosting provider's public html folder or any Internet facing servers**, as they will be compromised. It is recommended using a virtual machine (such as [VirtualBox](https://www.virtualbox.org/) or [VMware](https://www.vmware.com/)), which is set to NAT networking mode. Inside a guest machine, you can download and install [XAMPP](https://www.apachefriends.org/) for the web server and database.
 
 ### Disclaimer
 
-We do not take responsibility for the way in which any one uses this application (DVWA). We have made the purposes of the application clear and it should not be used maliciously. We have given warnings and taken measures to prevent users from installing DVWA on to live web servers. If your web server is compromised via an installation of DVWA, it is not our responsibility, it is the responsibility of the person/s who uploaded and installed it.
+We do not take responsibility for the way in which any one uses this application (OCWA). We have made the purposes of the application clear and it should not be used maliciously. We have given warnings and taken measures to prevent users from installing OCWA on to live web servers. If your web server is compromised via an installation of OCWA, it is not our responsibility, it is the responsibility of the person/s who uploaded and installed it.
 
 - - -
 
 ## License
 
-This file is part of Damn Vulnerable Web Application (DVWA).
+This file is part of D*mn Vulnerable Web Application (DVWA).
 
-Damn Vulnerable Web Application (DVWA) is free software: you can redistribute it and/or modify
+D*mn Vulnerable Web Application (DVWA) is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-Damn Vulnerable Web Application (DVWA) is distributed in the hope that it will be useful,
+D*mn Vulnerable Web Application (DVWA) is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with Damn Vulnerable Web Application (DVWA).  If not, see <https://www.gnu.org/licenses/>.
+along with D*mn Vulnerable Web Application (DVWA).  If not, see <https://www.gnu.org/licenses/>.
 
 - - -
 
@@ -58,13 +58,11 @@ If you would like to contribute a translation, please submit a PR. Note though, 
 
 ## Download
 
-While there are various versions of DVWA around, the only supported version is the latest source from the official GitHub repository. You can either clone it from the repo:
-
 ```sh
-git clone https://github.com/digininja/DVWA.git
+git clone https://github.com/0x31i/OCWA.git
 ```
 
-Or [download a ZIP of the files](https://github.com/digininja/DVWA/archive/master.zip).
+Or [download a ZIP of the files](https://github.com/0x31i/OCWA/archive/master.zip).
 
 - - -
 
@@ -87,10 +85,10 @@ An automated configuration script for DVWA on Debian-based machines, including K
 
 ##### One-Liner
 
-This will download an install script written by [@IamCarron](https://github.com/IamCarron) and run it automatically. This would not be included here if we did not trust the author and the script as it was when we reviewed it, but there is always the chance of someone going rogue, and so if you don't feel safe running someone else's code without reviewing it yourself, follow the manual process and you can review it once downloaded.
+This will download an install script written by [@0x31i](https://github.com/0x31i) and run it automatically.
 
 ```sh
-sudo bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/IamCarron/DVWA-Script/main/Install-DVWA.sh)"
+sudo bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/0x31i/OCWA-Script/main/Install-OCWA.sh)"
 ```
 
 ##### Manually Running the Script
@@ -98,106 +96,20 @@ sudo bash -c "$(curl --fail --show-error --silent --location https://raw.githubu
 1. **Download the script:**
 
    ```sh
-   wget https://raw.githubusercontent.com/IamCarron/DVWA-Script/main/Install-DVWA.sh
+   wget https://raw.githubusercontent.com/0x31i/OCWA-Script/main/Install-OCWA.sh
    ```
 
 2. **Make the script executable:**
 
    ```sh
-   chmod +x Install-DVWA.sh
+   chmod +x Install-OCWA.sh
    ```
 
 3. **Run the script as root:**
 
    ```sh
-   sudo ./Install-DVWA.sh
+   sudo ./Install-OCWA.sh
    ```
-
-### Installation Videos
-
-- [Installing DVWA on Kali running in VirtualBox](https://www.youtube.com/watch?v=WkyDxNJkgQ4)
-- [Installing DVWA on Windows using XAMPP](https://youtu.be/Yzksa_WjnY0)
-- [Installing Damn Vulnerable Web Application (DVWA) on Windows 10](https://www.youtube.com/watch?v=cak2lQvBRAo)
-
-### Windows + XAMPP
-
-The easiest way to install DVWA is to download and install [XAMPP](https://www.apachefriends.org/) if you do not already have a web server setup.
-
-XAMPP is a very easy to install Apache Distribution for Linux, Solaris, Windows and Mac OS X. The package includes the Apache web server, MySQL, PHP, Perl, a FTP server and phpMyAdmin.
-
-This [video](https://youtu.be/Yzksa_WjnY0) walks you through the installation process for Windows but it should be similar for other OSs.
-
-### Docker
-
-Thanks to [hoang-himself](https://github.com/hoang-himself) and [JGillam](https://github.com/JGillam), every commit to the `master` branch causes a Docker image to be built and ready to be pulled down from GitHub Container Registry.
-
-For more information on what you are getting, you can browse [the prebuilt Docker images](https://github.com/digininja/DVWA/pkgs/container/dvwa).
-
-#### Getting Started
-
-Prerequisites: Docker and Docker Compose.
-
-- If you are using Docker Desktop, both of these should be already installed.
-- If you prefer Docker Engine on Linux, make sure to follow their [installation guide](https://docs.docker.com/engine/install/#server).
-
-**We provide support for the latest Docker release as shown above.**
-If you are using Linux and the Docker package that came with your package manager, it will probably work too, but support will only be best-effort.
-
-Upgrading Docker from the package manager version to upstream requires that you uninstall the old versions as seen in their manuals for [Ubuntu](https://docs.docker.com/engine/install/ubuntu/#uninstall-old-versions), [Fedora](https://docs.docker.com/engine/install/fedora/#uninstall-old-versions) and others.
-Your Docker data (containers, images, volumes, etc.) should not be affected, but in case you do run into a problem, make sure to [tell Docker](https://www.docker.com/support) and use search engines in the mean time.
-
-Then, to get started:
-
-1. Run `docker version` and `docker compose version` to see if you have Docker and Docker Compose properly installed. You should be able to see their versions in the output.
-
-    For example:
-
-    ```text
-    >>> docker version
-    Client:
-     [...]
-     Version:           23.0.5
-     [...]
-
-    Server: Docker Desktop 4.19.0 (106363)
-     Engine:
-      [...]
-      Version:          23.0.5
-      [...]
-
-    >>> docker compose version
-    Docker Compose version v2.17.3
-    ```
-
-    If you don't see anything or get a command not found error, follow the prerequisites to setup Docker and Docker Compose.
-
-2. Clone or download this repository and extract (see [Download](#download)).
-3. Open a terminal of your choice and change its working directory into this folder (`DVWA`).
-4. Run `docker compose up -d`.
-
-DVWA is now available at `http://localhost:4280`.
-
-**Notice that for running DVWA in containers, the web server is listening on port 4280 instead of the usual port of 80.**
-For more information on this decision, see [I want to run DVWA on a different port](#i-want-to-run-dvwa-on-a-different-port).
-
-#### Local Build
-
-If you made local changes and want to build the project from local, go to `compose.yml` and change `pull_policy: always` to `pull_policy: build`.
-
-Running `docker compose up -d` should trigger Docker to build an image from local regardless of what is available in the registry.
-
-See also: [`pull_policy`](https://github.com/compose-spec/compose-spec/blob/master/05-services.md#pull_policy).
-
-#### Serve local files
-
-If your making local changes and don't want to build the project for every change :
-1. Go to `compose.yml` and uncomment :
-    ```
-        # volumes:
-        #   - ./:/var/www/html
-    ```
-2. Run `cp config/config.inc.php.dist config/config.inc.php` to copy the default config file.
-3. Run `docker compose up -d` and changes to local files will reflect on the container.
 
 ### PHP Versions
 
@@ -263,7 +175,7 @@ If you did not install Composer to the system path, make sure you reference its 
 
 ### Config File
 
-DVWA ships with a dummy copy of its config file which you will need to copy into place and then make the appropriate changes. On Linux, assuming you are in the DVWA directory, this can be done as follows:
+OCWA ships with a dummy copy of its config file which you will need to copy into place and then make the appropriate changes. On Linux, assuming you are in the OCWA directory, this can be done as follows:
 
 `cp config/config.inc.php.dist config/config.inc.php`
 
