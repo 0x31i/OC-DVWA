@@ -239,8 +239,8 @@ div#footer {
 }
 
 .popup_button:hover {
-	color: white;
-    background-color: #A1CC33;
+	color: black;
+    background-color: #03fdab;
 }
 
 
@@ -342,6 +342,7 @@ body.home.dark div#guestbook_comments {
 	background-color: #2f2f2f;
 
 }
+
 
 
 
