@@ -52,8 +52,9 @@ $page[ 'body' ] .= "
 		<li>Show Online Status: Disabled</li>
 		<li>Email Notifications: Replies enabled, PM alerts enabled, newsletter disabled</li>
 	</ul>
- 	<h3>Profile Picture:</h3> 
+ 	<h3>Profile Settings:</h3> 
 	<p>Please upload a profile picture below.</p>
+ 	<p>WARNING: This feature is currently buggy and is still being tested/developed.</p>
 
 	{$WarningHtml}
 
@@ -120,6 +121,7 @@ if( isset( \$_POST[ 'Upload' ] ) ) {
 dvwaHtmlEcho( $page );
 
 ?>
+
 
 
 
