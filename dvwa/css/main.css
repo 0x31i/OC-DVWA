@@ -312,8 +312,8 @@ span.failure {
 }
 
 .theme-icon img {
-	height: 32px;
-	width: 32px;
+	height: 20px;
+	width: 20px;
 }
 
 
@@ -342,6 +342,7 @@ body.home.dark div#guestbook_comments {
 	background-color: #2f2f2f;
 
 }
+
 
 
 
