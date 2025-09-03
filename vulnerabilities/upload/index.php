@@ -54,7 +54,7 @@ $page[ 'body' ] .= "
 	</ul>
  	<h3>Profile Settings:</h3> 
 	<p>Please upload a profile picture below.</p>
- 	<p>WARNING: This feature is currently buggy and is still being tested/developed.</p>
+ 	<p><strong>WARNING</strong>: This feature is currently buggy and is still being tested/developed.</p>
 
 	{$WarningHtml}
 
@@ -121,6 +121,7 @@ if( isset( \$_POST[ 'Upload' ] ) ) {
 dvwaHtmlEcho( $page );
 
 ?>
+
 
 
 
