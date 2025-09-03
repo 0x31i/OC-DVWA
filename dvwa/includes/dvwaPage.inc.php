@@ -178,7 +178,7 @@ function dvwaCurrentUser() {
 
 function &dvwaPageNewGrab() {
 	$returnArray = array(
-		'title'           => 'Damn Vulnerable Web Application (DVWA)',
+		'title'           => 'Overclock Web Application (OCWA)',
 		'title_separator' => ' :: ',
 		'body'            => '',
 		'page_id'         => '',
