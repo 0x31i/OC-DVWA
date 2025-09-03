@@ -231,11 +231,11 @@ div#footer {
     border-color: #D2D4D4 #6B778C #6B778C #D2D4D4;
     padding: 3px 5px;
     margin-bottom: 3px;
-    background-color: #bebebe;
+    background-color: black;
     font-weight: bold;
     float: right;
     cursor: pointer;
-    color: #000000;
+    color: white;
 }
 
 .popup_button:hover {
@@ -342,6 +342,7 @@ body.home.dark div#guestbook_comments {
 	background-color: #2f2f2f;
 
 }
+
 
 
 
