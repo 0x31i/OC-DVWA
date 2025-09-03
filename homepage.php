@@ -18,7 +18,7 @@ $page[ 'body' ] .= "
 
 	<h2>Getting Started</h2>
 	<p>Launch the Overclock Web Application (OCWA) to get started.</p>
- 	<p><strong>Click the option on the main menu titled /"Launch OCWA" to open the Overclock Web Application (OCWA).</strong></p>
+ 	<p><strong>Click the option on the main menu titled <em>Launch OCWA</em> to open the Overclock Web Application (OCWA).</strong></p>
 	<p>There is a help button at the bottom of each page, which allows you to view hints & tips for that vulnerability. There are also additional links for further background reading, which relates to that security issue.</p>
 	<hr />
 	<br />
