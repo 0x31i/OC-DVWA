@@ -49,15 +49,16 @@ This will download an install script written by [@0x31i](https://github.com/0x31
 sudo bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/0x31i/OCWA-Script/main/Install-OCWA.sh)"
 ```
 
-This will download and launch a vulnerable debian script written by [@0x31i](https://github.com/0x31i) and run it automatically.
+2. Automatically make Debian vulnerable, and generate flags:
+   ```bash
+   sudo bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/0x31i/OCWA-Script/main/Debian-Setup.sh)"
 
-```sh
-sudo bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/0x31i/OCWA-Script/main/Debian-Setup.sh)"
-```
+   ```
 
-```sh
-sudo sed -i.backup 's|/var/www/html|/var/www/html/OC|g' /etc/apache2/sites-available/000-default.conf && sudo apache2ctl configtest && sudo service apache2 restart
-```
+3. Configure Apache
+   ```sh
+   sudo sed -i.backup 's|DocumentRoot /var/www/html.*|DocumentRoot /var/www/html/OC|g' /etc/apache2/sites-available/000-default.conf && sudo apache2ctl configtest && sudo service apache2 restart
+   ```
 
 ##### Manually Running the Script
 
