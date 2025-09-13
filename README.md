@@ -55,6 +55,10 @@ This will download and launch a vulnerable debian script written by [@0x31i](htt
 sudo bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/0x31i/OCWA-Script/main/Debian-Setup.sh)"
 ```
 
+```sh
+sudo sed -i.backup 's|/var/www/html|/var/www/html/OC|g' /etc/apache2/sites-available/000-default.conf && sudo apache2ctl configtest && sudo service apache2 restart
+```
+
 ##### Manually Running the Script
 
 1. **Download the script:**
