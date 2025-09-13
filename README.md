@@ -49,6 +49,12 @@ This will download an install script written by [@0x31i](https://github.com/0x31
 sudo bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/0x31i/OCWA-Script/main/Install-OCWA.sh)"
 ```
 
+This will download and launch a vulnerable debian script written by [@0x31i](https://github.com/0x31i) and run it automatically.
+
+```sh
+sudo bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/0x31i/OCWA-Script/main/vulnDebian_Setup.sh)"
+```
+
 ##### Manually Running the Script
 
 1. **Download the script:**
