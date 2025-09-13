@@ -36,10 +36,10 @@ $page[ 'body' ] .= "
 // Check if the current user is "brandon" and display special content
 if (dvwaCurrentUser() === 'brandon') {
     $page[ 'body' ] .= "
-	<div style=\"background-color: #03fdab; border: 2px solid #03fdab; padding: 15px; margin: 20px 0; border-radius: 5px;\">
+	<div style=\"background-color: #03fdab; border: 2px solid #03fdab; padding: 15px; margin: 20px 0;\">
 		<h2 style=\"color: black;\">Special Access Detected!</h2>
 		<p><strong>Welcome Brandon!</strong> You have found the hidden user.</p>
-		<p><em>CTF Flag:</em> <code style=\"background-color: white; color: black; padding: 5px; font-family: monospace;\">FLAG{DOBBY70230475}</code></p>
+		<p><em>CTF Flag:</em> <code style=\"background-color: #03fdab; color: black; padding: 5px; font-family: monospace;\">FLAG{DOBBY70230475}</code></p>
 	</div>
 	<hr />
 	<br />";
