@@ -43,16 +43,14 @@ An automated configuration script for DVWA on Debian-based machines, including K
 
 ##### One-Liner
 
-This will download an install script written by [@0x31i](https://github.com/0x31i) and run it automatically.
-
-```sh
-sudo bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/0x31i/OCWA-Script/main/Install-OCWA.sh)"
-```
+1. This will download an install script written by [@0x31i](https://github.com/0x31i) and run it automatically.
+   ```sh
+   sudo bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/0x31i/OCWA-Script/main/Install-OCWA.sh)"
+   ```
 
 2. Automatically make Debian vulnerable, and generate flags:
    ```bash
    sudo bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/0x31i/OCWA-Script/main/Debian-Setup.sh)"
-
    ```
 
 3. Configure Apache
