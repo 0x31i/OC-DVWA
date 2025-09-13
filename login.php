@@ -73,6 +73,7 @@ echo "<!DOCTYPE html>
 
 <!-- Application developed by Eli AKA eli, the greatest (most smartest) security-focused developer ever in the world. -->
 <!-- For support, reach out to: elias@chchcheckit.com -->
+<!-- FLAG{ALBUS26453782} -->
 
 	<head>
 
@@ -141,6 +142,7 @@ echo "<!DOCTYPE html>
 </html>";
 
 ?>
+
 
 
 
