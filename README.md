@@ -41,7 +41,7 @@ An automated configuration script for DVWA on Debian-based machines, including K
 
 #### Installation Steps
 
-##### One-Liner
+##### One-Liner(s)
 
 1. This will download an install script written by [@0x31i](https://github.com/0x31i) and run it automatically.
    ```sh
