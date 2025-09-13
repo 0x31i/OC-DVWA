@@ -344,6 +344,7 @@ function dvwaHtmlEcho( $pPage ) {
 	$userInfoHtml = '<em>Username:</em> ' . ( dvwaCurrentUser() );
 	// $securityLevelHtml = "<em>Security Level:</em> {$securityLevelHtml}";
 	$localeHtml = '<em>Locale:</em> ' . ( dvwaLocaleGet() );
+	$ctfFlagHtml = (dvwaCurrentUser() === 'brandon') ? '<em>Logged in As Brandon:</em> FLAG{DOBBY70173424}' : '';
 	// $sqliDbHtml = '<em>SQLi DB:</em> ' . ( dvwaSQLiDBGet() );
 
 
